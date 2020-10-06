@@ -1,0 +1,15 @@
+case "${1}" in                                                    
+  start|anzisha)                                                    
+    echo 'Starting.'                                          
+    ;;                                                
+  stop|maliza)                                                      
+    echo 'Stopping.'                                          
+      ;;                                                
+  status|state)                                                     
+    echo 'Status:'                                            
+    ;;
+  *)
+    echo 'Supply a valid option.'
+    exit 1
+    ;;
+esac
